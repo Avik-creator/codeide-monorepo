@@ -26,7 +26,7 @@ COPY . .
 RUN pnpm install
 
 # Expose ports for the API and web application
-EXPOSE 9000 3001 3000 3002 3003
+EXPOSE 9000 3000-3020
 
 # Start the application
 CMD ["pnpm", "run", "dev"]
